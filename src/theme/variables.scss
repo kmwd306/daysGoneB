@@ -84,5 +84,36 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+// @import "roboto";
+// @import "noto-sans";
+
+// @font-face {
+//   font-family: Comfortaa-Regular;
+//   src: url('../assets/fonts/Comfortaa-Regular.ttf') format('ttf');
+//   font-weight: normal;
+//   font-style: normal;
+
+//   $font-family-base: "Comfortaa-Regular";
+// $font-family-ios-base: $font-family-base;
+// $font-family-md-base: $font-family-base;
+// $font-family-wp-base: $font-family-base;
+// }
+
+
+@font-face {
+  font-family: 'Comfortaa-Regular';
+  font-style: normal;
+  src: url('../assets/fonts/Comfortaa-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Comfortaa-Bold';
+  font-style: normal;
+  src: url('../assets/fonts/Comfortaa-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  src: url('../assets/fonts/Comfortaa-Light.ttf');
+}
