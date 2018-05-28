@@ -16,6 +16,7 @@ export class HomePage {
     this.navCtrl.push(SignupPage);
   }
 
-  
-
+  myFunction(x) {
+    x.classList.toggle("change");
+  }
 }
