@@ -1,3 +1,4 @@
+
 <ion-header>
   <!-- <ion-navbar>
     <ion-title>
@@ -7,17 +8,23 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card style="background-color: #3D5AFE; border-radius: 8px;">
-
-    <ion-card-header style="color: white; font-weight: bold; font-size: 18px; padding-top: 55px;">
-      Welcome to Days Gone By
-    </ion-card-header>
   
-    <ion-card-content style="color: white; font-size: 16px; padding-top: 40px; line-height: 27px;">
-      We let the kids choose their bedtime stories and 
+  <div class="card" align="center" style="background-color: #3D5AFE; border-radius: 8px;">
+    <h5 style="color: white; font-weight: bold; font-size: 18px; padding-top: 40px;">Welcome to Days Gone By</h5>
+
+    <p style="color: white; font-size: 16px; padding-top: 1px; line-height: 27px;">We let the kids choose their bedtime stories and 
       you tell them. Since the beginning of time, parents 
       have told bedtime stories…so why not let the kids create them. 
-    </ion-card-content>
-  
-  </ion-card>
+    </p>
+
+  </div>
+
+  <div class="text">
+    <h5 class="bottom-text">Create your first story below.</h5>
+  </div>
+
+  <div class="next-button" style="padding-top: 15%;">
+      <button ion-button (click)="goToSignupPage()">CREATE YOUR CHARACTER</button>
+  </div>
+
 </ion-content>

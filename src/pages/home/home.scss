@@ -1,30 +1,59 @@
 page-home {
 
-    ion-card {
-    //     /* Rectangle 10: */
-       align-items: center;
+    
+    div.card {
+     /* Rectangle 10: */
+        align-items: center;
         border-radius: 8px;
-        height: 298px;
-        width: 311px;
+        height: 258px;
+        width: 300px;
+        margin: 0 auto;
+        transform: translate(0%, 60%);
     }
 
-    ion-card-header {
+    h5 {
         text-align: center;
         color: white;
         font-weight: bold;
         font-family: "Comfortaa-Bold" !important;
-
-
     }
 
-    ion-card-content {
-        /* We let the kids choo: */
-        //border: 1px solid #FFFFFF;
-       font-family: "Comfortaa-Bold" !important;
-        // font-size: 50px;
+    p {
+       font-family: "Comfortaa-Regular" !important;
         color: #FFFFFF;
         letter-spacing: -0.51px;
-        text-align: justify;
+        text-align: center;
+        margin: 1.25em 0;
+    }
+
+    .text {
+        padding-top: 50px;
+        text-align: center;
+        font-family: "Comfortaa-Bold" !important;
+        font-weight: bold;
+        color: black;
+    }
+
+    h5.bottom-text {
+        color: #000000;
+        font-family: "Comfortaa-Bold" !important;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 155px;
+    }
+
+
+    .button {
+        height: 45px;	
+        width: 289px;	
+        background-color: white;	
+        color: #3D5AFE;
+        font-family: "Comfortaa-Bold" !important;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        left: 6%;
+    
         
     }
 }
