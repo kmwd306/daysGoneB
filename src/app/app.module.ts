@@ -7,12 +7,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
+import { CharacterPage } from '../pages/character/character';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SignupPage
+    SignupPage,
+    CharacterPage
     
   ],
   imports: [
@@ -23,7 +25,8 @@ import { SignupPage } from '../pages/signup/signup';
   entryComponents: [
     MyApp,
     HomePage,
-    SignupPage
+    SignupPage,
+    CharacterPage
   ],
   providers: [
     //StatusBar,

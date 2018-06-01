@@ -2,24 +2,23 @@ page-home {
 
     ion-icon {
         font-size: 28px;
-        transform: translate(1330%, 80%);
+        transform: translate(1300%, 95%);
         color: #3D5AFE;
     }
 
     .container {
         display: inline-block;
         cursor: pointer;
-        transform: translate(50%, 100%);
-        // top: 100px;
     }
     
     .bar1, .bar2, .bar3 {
         width: 25px;
         height: 3px;
+        border-radius: 8px;
         background-color: #3D5AFE;
         margin: 3px 0;
+        transform: translate(50%, 850%);
         transition: 0.4s;
-        border-radius: 20px;
     }
     
     .change .bar1 {
@@ -34,15 +33,14 @@ page-home {
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
-    
     div.card {
      /* Rectangle 10: */
         align-items: center;
         border-radius: 8px;
         height: 258px;
-        width: 300px;
+        width: 310px;
         margin: 0 auto;
-        transform: translate(0%, 60%);
+        transform: translate(0%, 50%);
     }
 
     h5 {
@@ -58,10 +56,11 @@ page-home {
         letter-spacing: -0.51px;
         text-align: center;
         margin: 1.25em 0;
+        padding: 5px;
     }
 
     .text {
-        padding-top: 50px;
+        padding-top: 40px;
         text-align: center;
         font-family: "Comfortaa-Bold" !important;
         font-weight: bold;
@@ -73,7 +72,7 @@ page-home {
         font-family: "Comfortaa-Bold" !important;
         font-size: 18px;
         text-align: center;
-        padding-top: 155px;
+        padding-top: 140px;
     }
 
 

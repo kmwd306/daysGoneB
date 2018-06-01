@@ -18,5 +18,6 @@ export class HomePage {
 
   myFunction(x) {
     x.classList.toggle("change");
-  }
 }
+}
+

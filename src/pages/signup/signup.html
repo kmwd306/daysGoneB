@@ -6,14 +6,100 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>signup</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
 
-  <h1>Hello World</h1>
+  <!-- Hamburger Menu -->
+  <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  	
+  <!-- Hamburger Menu End -->
+
+  <ion-icon name="settings" medium></ion-icon>
+
+  <!-- Main Content -->
+  <ion-card>
+    
+      <ion-card-content>
+        <!-- Add card content here! -->
+        <ion-list no-lines>
+
+            <h5 class="adultName" style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;">Parent</h5>
+            <ion-item class="parentName">
+              <ion-input type="text" placeholder="Name"></ion-input>
+            </ion-item>
+          
+            <ion-row class="row">
+              <ion-col class="col1" col-6>
+            <h5 style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;" class="birthday-date">Birthday</h5>
+            <ion-item class="date">
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>
+            </ion-item>
+          </ion-col>
+
+
+          <ion-col class="col2">
+            <!-- <h5 style="font-family: 'Comfortaa-Bold'; font-size: 14px; color: #000000;">City</h5> -->
+            <ion-item class="city">
+              <ion-input type="text" placeholder="City"></ion-input>
+            </ion-item>
+          </ion-col>
+
+          </ion-row>
+
+
+          <ion-row>
+          <ion-col col-6 class="col3">
+          <h5 class="text-yrs" style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;">How long have you lived there?</h5>
+            <ion-item class="years"> 
+              <ion-input type="number" placeholder="Yrs" class="yrs"></ion-input>
+            </ion-item>
+          </ion-col>
+
+          <ion-col col-6>
+            <h5 class="text-toggle" style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;">Higher Education?</h5>
+            <ion-item>
+                <ion-toggle checked="true"></ion-toggle>
+              </ion-item>
+            </ion-col>    
+            </ion-row>
+
+            <h5 class="childName" style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;">Child</h5>
+            <ion-item class="childName">
+              <ion-input type="text" placeholder="Name"></ion-input>
+            </ion-item>
+
+            <h5 style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;" class="childbirthday-date">Birthday</h5>
+            <ion-item class="child-birthdate">
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="birthday" name="birthday"></ion-datetime>
+            </ion-item>
+
+            <h5 class="family" style="font-family: 'Comfortaa-Bold'; font-size: 15px; color: #000000;">Add Family Members</h5>
+            <ion-item class="familyMember">
+              <ion-input type="text" placeholder="Name"></ion-input>
+            </ion-item>
+
+            <ion-item class="familyMember">
+              <ion-input type="text" placeholder="Name"></ion-input>
+            </ion-item>
+
+            <ion-item class="familyMember">
+              <ion-input type="text" placeholder="Name"></ion-input>
+            </ion-item>
+
+          </ion-list>
+      </ion-card-content>
+    
+    </ion-card>
+
+    <div class="next-button" style="padding-top: 15%;">
+        <button ion-button (click)="goToCharacterPage()">GET STARTED</button>
+    </div>
+
+  <!-- Main Content End -->
 </ion-content>
