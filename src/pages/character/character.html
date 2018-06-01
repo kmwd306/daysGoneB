@@ -6,13 +6,81 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>character</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+
+   <!-- Hamburger Menu -->
+   <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  	
+  <!-- Hamburger Menu End -->
+
+  <ion-icon name="settings" medium></ion-icon>
+
+  <!-- Main Content -->
+
+  <div class="story">
+      <ion-segment [(ngModel)]="story">
+        <ion-segment-button value="character">
+          CHARACTER
+        </ion-segment-button>
+        <ion-segment-button value="plot">
+          PLOT
+        </ion-segment-button>
+      <ion-segment-button value="chapter">
+          CHAPTER
+        </ion-segment-button>
+      </ion-segment>
+    </div>  
+
+    <div [ngSwitch]="story" class="card">
+      <ion-card *ngSwitchCase="'character'">
+        <h3 style="font-family: 'Comfortaa-Bold'; font-size: 18px; color: #000000;">I would like to hear a story about…</h3>
+        <ion-item>
+            <ion-label>Grandmom</ion-label>
+            <ion-checkbox color="blue" checked="true"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+              <ion-label>Dad</ion-label>
+              <ion-checkbox color="blue" checked="true"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Grandpop</ion-label>
+                <ion-checkbox color="blue" checked="true"></ion-checkbox>
+              </ion-item>
+              <ion-item>
+                  <ion-label>Uncle</ion-label>
+                  <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Sister</ion-label>
+                    <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label>Mom</ion-label>
+                      <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Aunt</ion-label>
+                        <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                      </ion-item>
+                      <ion-item>
+                          <ion-label>Brother</ion-label>
+                          <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Other</ion-label>
+                            <ion-checkbox color="blue" checked="true"></ion-checkbox>
+                          </ion-item>
+              
+      </ion-card>
+    </div>
+
+  <!-- Main Content End -->
 
 </ion-content>
