@@ -14,12 +14,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'character.html',
 })
 export class CharacterPage {
+  story: string;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.story= "character";
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CharacterPage');
   }
+
+  ionViewWillEnter(){
+    this.story = "character";
+    
+    }
 
 }
