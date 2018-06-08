@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SlotPage } from '../slot/slot';
 
 /**
  * Generated class for the CharacterPage page.
@@ -31,4 +32,7 @@ export class CharacterPage {
     
     }
 
+    goToSlotPage() {
+      this.navCtrl.push(SlotPage);
+    }
 }

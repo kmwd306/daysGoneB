@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
+  splashScreen: any;
   rootPage:any = HomePage;
 
   constructor(platform: Platform, splashScreen: SplashScreen) {
@@ -16,9 +17,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       // statusBar.styleDefault();
 
-      //this.splashScreen.show();
+      // this.splashScreen.show();
 
-      // this.splashScreen.hide();
+      // splashScreen.hide();
     });
   }
 }

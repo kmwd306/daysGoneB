@@ -38,47 +38,79 @@
       </ion-segment>
     </div>  
 
+    <!-- For Character Segment -->
+
     <div [ngSwitch]="story" class="card">
       <ion-card *ngSwitchCase="'character'">
-        <h3 style="font-family: 'Comfortaa-Bold'; font-size: 18px; color: #000000;">I would like to hear a story about…</h3>
-        <ion-row>
-          <ion-col>
+        <h3 style="font-family: 'Comfortaa-Bold'; font-size: 16px; color: #000000; font-weight: bolder; letter-spacing: -.8px;">
+          I would like to hear a story about…</h3>
+        <ion-row center class="row-one">
+          <ion-col col-6>
         <ion-item>
             <ion-label>Grandmom</ion-label>
             <ion-checkbox color="blue" checked="false"></ion-checkbox>
           </ion-item>
+        </ion-col>
+
+          <ion-col col-6>
           <ion-item>
               <ion-label>Dad</ion-label>
               <ion-checkbox color="blue" checked="false"></ion-checkbox>
-            </ion-item>
-            <ion-item>
+          </ion-item>
+              </ion-col>
+              </ion-row>
+
+              <ion-row center class="row-two">
+                <ion-col col-6>
+                    <ion-item>
                 <ion-label>Grandpop</ion-label>
                 <ion-checkbox color="blue" checked="false"></ion-checkbox>
               </ion-item>
-              <ion-item>
+                </ion-col>
+
+                <ion-col col-6>
+                    <ion-item>
                   <ion-label>Uncle</ion-label>
                   <ion-checkbox color="blue" checked="false"></ion-checkbox>
                 </ion-item>
-                <ion-item>
+                  </ion-col>
+                </ion-row>
+
+              <ion-row center class="row-three">
+                  <ion-col col-6>
+                      <ion-item>
                     <ion-label>Sister</ion-label>
                     <ion-checkbox color="blue" checked="false"></ion-checkbox>
                   </ion-item>
                 </ion-col>
-
-                <ion-col>
+               
+                  <ion-col col-6>
                   <ion-item>
                       <ion-label>Mom</ion-label>
                       <ion-checkbox color="blue" checked="false"></ion-checkbox>
                     </ion-item>
-                    <ion-item>
+                      </ion-col>
+                    </ion-row>
+
+                  <ion-row center class="row-four">
+                      <ion-col col-6>
+                          <ion-item>
                         <ion-label>Aunt</ion-label>
                         <ion-checkbox color="blue" checked="false"></ion-checkbox>
                       </ion-item>
-                      <ion-item>
+                        </ion-col>
+
+                        <ion-col col-6>
+                            <ion-item>
                           <ion-label>Brother</ion-label>
                           <ion-checkbox color="blue" checked="false"></ion-checkbox>
                         </ion-item>
-                        <ion-item>
+                          </ion-col>
+                        </ion-row>
+
+                      <ion-row class="row-five">
+                          <ion-col col-6>
+                              <ion-item>
                             <ion-label>Other</ion-label>
                             <ion-checkbox color="blue" checked="false"></ion-checkbox>
                           </ion-item>
@@ -86,8 +118,146 @@
                         </ion-row>
               
       </ion-card>
-    </div>
 
+      <img *ngSwitchCase="'character'" src="assets/imgs/monster1.png" style="width: 103px; height: 156px;"/>
+
+    </div>
+    <!-- End For Character Segment -->
+
+    <!-- For Plot Segement -->
+    <div [ngSwitch]="story" class="card2">
+        <ion-card *ngSwitchCase="'plot'">
+          <h3 class= "plot" style="font-family: 'Comfortaa-Bold'; font-size: 16px; color: #000000;">
+            When…</h3>
+          <ion-row center class="plot-one">
+            <ion-col col-6>
+          <ion-item>
+              <ion-label>Traveled to</ion-label>
+              <ion-checkbox color="blue" checked="false"></ion-checkbox>
+            </ion-item>
+          </ion-col>
+  
+            <ion-col col-6>
+            <ion-item>
+                <ion-label>Loved</ion-label>
+                <ion-checkbox color="blue" checked="false"></ion-checkbox>
+            </ion-item>
+                </ion-col>
+                </ion-row>
+  
+                <ion-row center class="plot-two">
+                  <ion-col col-6>
+                      <ion-item>
+                  <ion-label>Life Lesson</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                </ion-item>
+                  </ion-col>
+  
+                  <ion-col col-6>
+                      <ion-item>
+                    <ion-label>Happy times</ion-label>
+                    <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                  </ion-item>
+                    </ion-col>
+                  </ion-row>
+  
+                <ion-row center class="plot-three">
+                    <ion-col col-6>
+                        <ion-item>
+                      <ion-label>Moved to</ion-label>
+                      <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                    </ion-item>
+                  </ion-col>
+                 
+                    <ion-col col-6>
+                    <ion-item>
+                        <ion-label>Sad times</ion-label>
+                        <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                      </ion-item>
+                        </ion-col>
+                      </ion-row>
+  
+                    <ion-row center class="plot-four">
+                        <ion-col col-6>
+                            <ion-item>
+                          <ion-label>Vacation to</ion-label>
+                          <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                        </ion-item>
+                          </ion-col>
+  
+                          <ion-col col-6>
+                              <ion-item>
+                            <ion-label>Other</ion-label>
+                            <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                          </ion-item>
+                            </ion-col>
+                          </ion-row>
+  
+                        <ion-row class="plot-five">
+                            <ion-col col-6>
+                                <ion-item>
+                              <ion-label>Tried to get better at</ion-label>
+                              <ion-checkbox color="blue" checked="false"></ion-checkbox>
+                            </ion-item>
+                          </ion-col>
+                          </ion-row>
+                
+        </ion-card>
+  
+        <img class="monster2" *ngSwitchCase="'plot'" src="assets/imgs/monster2.png" style="width: 141px; height: 131px;"/>
+  
+      </div>
+
+      <!-- For Chapter Segment -->
+
+      <div [ngSwitch]="story" class="card3">
+          <ion-card *ngSwitchCase="'chapter'" class="chapter">
+            <h3 class= "chapter" style="font-family: 'Comfortaa-Bold'; font-size: 16px; color: #000000;">
+              What…</h3>
+            <ion-row center class="chapter-one">
+              <ion-col col-10>
+            <ion-item>
+                <ion-label class="one">Before you were born</ion-label>
+                <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+            
+              <ion-item>
+                  <ion-label class="two">When you were a baby</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label class="three">In elementry school</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label class="four">In middle school</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label class="five">In highschool</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label class="six">In college</ion-label>
+                  <ion-checkbox color="blue" checked="false"></ion-checkbox>
+              </ion-item>
+                  </ion-col>
+                  </ion-row>
+          </ion-card>
+    
+          <img class="monster3" *ngSwitchCase="'chapter'" src="assets/imgs/monster3.png" style="width: 171px; height: 85px;"/>
+    
+        </div>
+
+        <button ion-button clear (click)="goToSlotPage()" class="next-button">NEXT</button>
+        
+        
   <!-- Main Content End -->
+
+
 
 </ion-content>

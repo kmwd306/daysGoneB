@@ -36,9 +36,9 @@ page-character {
     div.story {
         transform: translate(0%, 125%);
         height: 50px;
-        color: #3D5AFE;
-        
     }
+
+    // General Card for All Segments
 
     ion-card {
         height: 362px;	
@@ -47,15 +47,123 @@ page-character {
         border-radius: 8px !important;
         box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
         transform: translate(0%, 25%);
+        z-index: 0;
 
-        ion-label {
-            font-family: 'Comfortaa-Bold';
-            font-size: 18px;
-            color: #3D5AFE;
+
+    // Character Segment 
+
+        h3 {
+            transform: translate(5%, 125%);
+            
+        }
+
+        .row-one {
+            transform: translate(0%, 55%);
+        }
+        .row-two {
+            transform: translate(0%, 55%);
+        }
+        .row-three {
+            transform: translate(0%, 55%);
+        }
+        .row-four {
+            transform: translate(0%, 55%);
+        }
+        .row-five {
+            transform: translate(0%, 55%);
+        }
+
+        ion-col.col {
+
+            ion-label {
+                font-family: 'Comfortaa-Bold';
+                font-weight: bolder;
+                font-size: 16px;
+                color: #3D5AFE;
+                width: 160px !important;
+                margin: 0px;
+                letter-spacing: -1.5px;
+           
+            }
+
+            ion-checkbox {
+                margin: 8px 6px 8px 2px !important;
+            }
         }
     }
 
+    img{
+        position: absolute;
+        z-index: 1;
+        transform: translate(230%, -0%);
+    }
+
+
+    // Plot Segment
+
+    h3.plot {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .plot-one {
+        transform: translate(0%, 55%);
+    }
+    .plot-two {
+        transform: translate(0%, 55%);
+    }
+    .plot-three {
+        transform: translate(0%, 55%);
+    }
+    .plot-four {
+        transform: translate(0%, 55%);
+    }
+    .plot-five {
+        transform: translate(0%, 55%);
+        width: 550px;
+    }
+
+    .monster2 {
+        transform: translate(0%, 35%);
+    }
     
 
+    // Chapter Segment
 
+    .chapter {
+        z-index: 0;
+    }
+
+    h3.chapter {
+        transform: translate(42%, 150%);
+        font-weight: bolder;
+    }
+
+    .chapter-one {
+        transform: translate(0%, 15%);
+
+        ion-col.col-6{
+            width: 260px;
+        }
+    }
+
+    .monster3 {
+        // position: absolute;
+        z-index: 1;
+        transform: translate(115%, 100%);
+    }
+
+    .next-button {
+        height: 45px;	
+        width: 289px;	
+        background-color: transparent;	
+        color: #3D5AFE;
+        font-family: "Comfortaa-Bold" !important;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        left: 6%;
+        top: 50%;
+        transform: translate(0%, 200%);
+    }
 }

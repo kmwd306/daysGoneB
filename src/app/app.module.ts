@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { CharacterPage } from '../pages/character/character';
+import { SlotPage } from '../pages/slot/slot';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     SignupPage,
-    CharacterPage
+    CharacterPage,
+    SlotPage
     
   ],
   imports: [
@@ -26,7 +28,8 @@ import { CharacterPage } from '../pages/character/character';
     MyApp,
     HomePage,
     SignupPage,
-    CharacterPage
+    CharacterPage,
+    SlotPage
   ],
   providers: [
     //StatusBar,
