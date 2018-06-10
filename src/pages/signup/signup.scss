@@ -1,50 +1,140 @@
 page-signup {
 
-    ion-icon {
-        font-size: 28px;
-        transform: translate(1350%, 95%);
-        color: #3D5AFE;
-    }
+  // Menu Icon
 
-    .container {
-        display: inline-block;
-        cursor: pointer;
+  @keyframes checked-anim {
+    50% {
+        width: 3000px;
+        height: 3000px;
     }
-    
-    .bar1, .bar2, .bar3 {
-        width: 25px;
-        height: 3px;
-        border-radius: 8px;
-        background-color: #3D5AFE;
-        margin: 3px 0;
-        transform: translate(50%, 850%);
-        transition: 0.4s;
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
-    
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+}
+@keyframes not-checked-anim {
+    0% {
+        width: 3000px;
+        height: 3000px;
     }
+}
+li, a {
+    margin: 75px 0 -55px 0;
+    color: #3D5AFE;
+    font: 14pt "Comfortaa-Bold";
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+    text-align: center;
     
-    .change .bar2 {opacity: 0;}
-    
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
+}
+li {
+    width: 200px;
+    transform: translate(45%, 315%);
+}
+a:focus {
+    display: block;
+    color: #3D5AFE;
+    background-color: #ffffff;
+    transition: all .5s;  
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#trigger, #burger, #burger:before, #burger:after {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    background: #3D5AFE;
+    width: 30px;
+    height: 3.5px;
+    transition: .2s ease;
+    // cursor: pointer;
+   z-index: 1;
+    border-radius: 150px;
+}
+#trigger {
+    height: 22px;
+    background: none;
+}
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+}
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+}
+#menu-toggle:checked + #trigger + #burger {
+    top: 40px;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+#menu {
+    position: absolute;
+    left: 0px;
+    margin: 0; padding: 0;
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 100%;
+    // box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    animation: not-checked-anim .2s both;
+    transition: .2s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+    animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ #menu > li, a {
+    display: block;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
 
     ion-card {
+        position: relative;
         height: 725px;	
         width: 326px !important;	
         background-color: #FFF;	
         border-radius: 8px !important;
         box-shadow: 0 2px 4px 0 rgba(183,180,180,0.5);
         transform: translate(0%, 8%);
+        z-index: -1;
     }
 
     ion-list {
         padding-top: 15px;
         width: 300px;
+        position: relative;
+        z-index: 0;
     }
 
     h5.adultName {
@@ -200,7 +290,12 @@ page-signup {
         }
     }
 
-    .button {
+    .next-button {
+        position: relative;
+        z-index: -1;
+
+
+        .button{
         height: 45px;	
         width: 289px;	
         background-color: white;	
@@ -212,5 +307,6 @@ page-signup {
         left: 6%;
         top: 20%;
     }
+}
 
 }
