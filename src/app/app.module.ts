@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { CharacterPage } from '../pages/character/character';
 import { SlotPage } from '../pages/slot/slot';
+import { RoulettePage } from '../pages/roulette/roulette';
+import { ShakePage } from '../pages/shake/shake';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { SlotPage } from '../pages/slot/slot';
     HomePage,
     SignupPage,
     CharacterPage,
-    SlotPage
+    SlotPage,
+    RoulettePage,
+    ShakePage
     
   ],
   imports: [
@@ -29,7 +34,9 @@ import { SlotPage } from '../pages/slot/slot';
     HomePage,
     SignupPage,
     CharacterPage,
-    SlotPage
+    SlotPage,
+    RoulettePage,
+    ShakePage
   ],
   providers: [
     //StatusBar,
